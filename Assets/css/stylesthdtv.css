@@ -1,0 +1,430 @@
+:root {
+    --primary-color: #530206;
+    --white-color: #FFFFFF;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo-branco {
+    background-color: #fff;
+    color: #0A1128;
+}
+.fundo-vermelho {
+    background-color: rgb(139,0,0);
+    color: #fff;
+}
+.fundo-terciario {
+    background-color: #0A1128;
+    color: var(--white-color);
+}
+.fundo-principal {
+    background-color: #530206;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23640205' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23760104' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23870102' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23990001' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+}
+.fundo-rodape {
+    background-color: #530206;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23640205' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23760104' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23870102' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23990001' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    bottom: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+
+}
+h1 {
+    font-size: 4rem;
+    Text-transform: uppercase;
+
+}
+h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+a {
+    text-decoration: none;
+}
+.menu { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.2rem solid var(--light-gray-color);
+}
+.conteudo-menu a {
+    color: var(--white-color)
+}
+.conteudo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    color: var(--white-color);
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+.espaco-menu {
+    height: 35px;
+}
+.close-menu {
+    display: none;
+}
+.app-img a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.app-img-th a {
+    text-decoration: none;
+    color: var(--white-color)
+}
+.link-app-proprio {
+    color: var(--white-color);
+}
+.conteudo-principal {
+    
+    margin: 0 auto;
+    padding: var(--gap);
+}
+.section {
+    min-height: 100vh;
+}
+.teste-dns {
+    min-height: 30vh;
+}
+.servicos-conteudo {
+    position: relative;
+    top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+}
+.streaming-conteudo {
+    position: relative;   
+    top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+}
+.texto-servicos-conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: var(--white-color);
+}
+.texto-servicos-conteudo a {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+.texto-canais-conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.texto-streaming-conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: var(--white-color);
+}
+.texto-instalacao-conteudo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: var(--white-color);
+}
+.texto-instalacao-conteudo a {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+.teste-gratis {
+    text-align: center;
+}
+.texto-rodape {
+    color: #530206;
+    text-align: center;
+}
+.logo {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.imagem-conteudo-canais {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.imagem-conteudo-infantil {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.imagem-conteudo-esportes {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.imagem-conteudo-streaming {
+    margin-left: 10%;
+}
+section .conteudo-principal .conteudo-streaming {
+    padding: 8rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+#streamings {
+    padding-top: 2rem;
+}
+.app-img-streamings {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+.app-img-th {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+#streamings-2 {
+    display: none;
+}
+.imagem-conteudo-instalacao {
+    padding-top: 2rem;
+    margin-left: 10%;
+    
+}
+.imagem-conteudo-instalacao iframe {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 70%;
+    
+}
+.logo-principal {
+    border-radius: 50%;
+}
+.whatsapp-logo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.video video {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+.conteudo-grid-heading, .descricao-grid {
+    color: var(--primary-color);
+}
+.conteudo-grid-heading-dois, .descricao-grid-dois {
+    color: var(--white-color);
+}
+.conteudo-grid-um {
+    padding-top: 8rem;
+}
+#footer .conteudo-rodape {
+    height: 15px;
+}
+.whatsapp-link img {
+    height: 70px;
+    width: 70px;
+}
+@media (max-width: 1000px) {
+    .grid, .servicos-conteudo {
+        grid-template-columns: 1fr;
+        top: 0;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .teste-dns {
+        padding-top: 7rem;
+    }
+    .video-inicial {
+        grid-template-columns: 1fr;
+    }
+    .video video {
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    div .logo {
+        display: grid;
+        padding-bottom: 0;
+    }
+    #streamings {
+        display: none;
+    }
+    #streamings-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .app-img-streamings img{
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%; 
+    }
+    .app-img-th-st img{
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%; 
+    }
+    .app-img-th img{
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%; 
+    }
+    .logo img {
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .conteudo-grid-um {
+        padding-top: 0;
+    }
+    .conteudo-canais {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .conteudo-esportes {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .imagem-conteudo-canais img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .imagem-conteudo-infantil img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .imagem-conteudo-esportes img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .imagem-conteudo-streaming img {
+        display: none;
+    }
+    .imagem-conteudo-instalacao iframe {
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+    .conteudo-menu, .conteudo-menu ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .conteudo-menu {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+    .close-menu-label::after {
+        content: '☰';  
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    /* x */
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after {
+        content: 'x'; 
+    }
+    .espaco-menu {
+        display: none;
+    }
+}
